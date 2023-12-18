@@ -1,3 +1,3 @@
 #!/usr/bin/python3
-number = round(3.14159,2)
-print(f"{number}")
+number = 3.14159
+print(f"{number:.2f}")
