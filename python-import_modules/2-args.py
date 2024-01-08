@@ -10,7 +10,7 @@ elif length == 1:
     print("{} argument:".format(length))
     print("{}: {}".format(length,args[0]))
 else:
-    print("{} argument:".format(length))
+    print("{} arguments:".format(length))
     for i in args :
         index = index + 1
-        print("{}:{}".format(index,i))
+        print("{}: {}".format(index,i))
