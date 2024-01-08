@@ -13,4 +13,4 @@ else:
     print("{} argument:".format(length))
     for i in args :
         index = index + 1
-        print("{}:{}\n".format(index,i))
+        print("{}:{}".format(index,i))
