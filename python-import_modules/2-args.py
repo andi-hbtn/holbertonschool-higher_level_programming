@@ -8,6 +8,7 @@ if length == 0:
     print("{} arguments.".format(length))
 elif length == 1:
     print("{} argument:".format(length))
+    print("{}: {}".format(length,args[0]))
 else:
     print("{} argument:".format(length))
     for i in args :
