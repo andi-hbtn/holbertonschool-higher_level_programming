@@ -1,5 +1,12 @@
 #!/usr/bin/python3
+"""
+connect with mysql and list all states
+"""
+
+
 import MySQLdb
+
+
 db = MySQLdb.connect(host="localhost", user="", password="", db="hbtn_0e_0_usa")
 cursor = db.cursor()
 
