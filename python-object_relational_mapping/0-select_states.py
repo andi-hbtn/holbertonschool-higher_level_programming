@@ -7,14 +7,13 @@ connect with mysql and list all states
 import MySQLdb
 
 
-db = MySQLdb.connect(host="localhost", user="", password="", db="hbtn_0e_0_usa")
+db = MySQLdb.connect(host="", user="", password="", db="hbtn_0e_0_usa")
 cursor = db.cursor()
 
 # Example query
 try:
     cursor.execute("SELECT * FROM states ORDER BY states.id")
     results = cursor.fetchall()
-    
     for row in results:
         print(row)
 except MySQLdb.Error as e:
