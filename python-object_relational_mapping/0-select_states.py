@@ -7,8 +7,8 @@ connect with mysql and list all states
 import MySQLdb
 import sys
 
-db = MySQLdb.connect(host="", port=3306, user="",
-                     password="", db="hbtn_0e_0_usa")
+db = MySQLdb.connect(host="localhost", port=3306, user=sys.argv[1],
+                     password=sys.argv[2], db=sys.argv[3])
 cursor = db.cursor()
 
 # Example query
