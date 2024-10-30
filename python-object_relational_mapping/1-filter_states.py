@@ -1,3 +1,9 @@
+#!/usr/bin/python3
+"""
+connect with mysql and list all states
+"""
+
+
 import MySQLdb
 import sys
 
