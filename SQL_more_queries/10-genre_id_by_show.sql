@@ -7,7 +7,7 @@ USE hbtn_0d_tvshows;
 CREATE TABLE `tv_show_genres` (
   `genre_id` int(11) NOT NULL AUTO_INCREMENT,
   `title` varchar(256) NOT NULL,
-  PRIMARY KEY (`id`)
+  PRIMARY KEY (`genre_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
 
 -- Create the tv_shows table
