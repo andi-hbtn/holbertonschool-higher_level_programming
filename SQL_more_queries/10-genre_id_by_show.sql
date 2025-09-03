@@ -11,6 +11,13 @@ CREATE TABLE `tv_shows` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
 
+-- Create the tv_genres table
+CREATE TABLE `tv_genres` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(256) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
+
 -- Create the tv_shows table
 CREATE TABLE `tv_show_genres` (
   `show_id` int(11) NOT NULL,
