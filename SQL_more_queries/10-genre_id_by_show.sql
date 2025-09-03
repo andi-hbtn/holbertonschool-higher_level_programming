@@ -3,6 +3,14 @@ CREATE DATABASE IF NOT EXISTS hbtn_0d_tvshows;
 
 -- USE the database
 USE hbtn_0d_tvshows;
+
+-- Create the tv_shows table
+CREATE TABLE `tv_shows` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(256) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
+
 -- Create the tv_shows table
 CREATE TABLE `tv_show_genres` (
   `show_id` int(11) NOT NULL,
@@ -12,13 +20,6 @@ CREATE TABLE `tv_show_genres` (
   CONSTRAINT `tv_show_genres_ibfk_1` FOREIGN KEY (`show_id`) REFERENCES `tv_shows` (`id`),
   CONSTRAINT `tv_show_genres_ibfk_2` FOREIGN KEY (`genre_id`) REFERENCES `tv_genres` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- Create the tv_shows table
-CREATE TABLE `tv_shows` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `title` varchar(256) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
 
 -- Query to list all TV shows with their genre IDs
 SELECT tv_shows.title, tv_show_genres.genre_id
