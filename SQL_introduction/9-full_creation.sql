@@ -1,4 +1,4 @@
---script that create a table with specific attributes and check if it exist and insert values
+-- script that create a table with specific attributes and check if it exist and insert values
 
 CREATE TABLE IF NOT EXISTS hbtn_0c_0.second_table(id int, name varchar(256),score int);
 
