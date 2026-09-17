@@ -1,4 +1,4 @@
---select all cities of California
+-- List all cities of the table that can be found on the database hbtn_0d_usa
 SELECT id, name
 FROM cities
 WHERE state_id = (
